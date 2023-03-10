@@ -349,7 +349,7 @@ else()
   message(STATUS "Building without build tag")
 endif()
 
-if(NOT MANUAL_SUBMODULES)
+if(FALSE)
   find_package(Git)
   if(GIT_FOUND)
     function (check_submodule relative_path)
